@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Skill Tyro | Privacy policy</title>
+</head>
+<body>
+
+
+  <header class="sticky top-0 z-50">
+    
+    <nav style="background:linear-gradient(102.33deg, #FFF8EF 2.75%, #FFF5E8 100%) " class='flex justify-between sm:px-14 px-5 py-5'>
+      <a href="./index.html"><img src="photos/SkillTyroLogo.png" class='h-16' alt="" /></a> 
+       
+      <a onclick="toggleMobileMenu()"> <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 sm:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg> </a>
+      <div id="mobileMenu" class="absolute w-[100vw] hidden  top-20 left-0 px-5 pt-5 MobileMenu font-semibold h-[80vh]" style="background:linear-gradient(102.33deg, #FFF8EF 2.75%, #FFF5E8 100%)" >
+        <ul class="flex flex-col gap-5" >
+           <a href="./index.html"><li class="border-b-2" onclick="toggleMobileMenu()" >Home</li></a>
+            <a href="./aboutUs.html"><li class="border-b-2" onclick="toggleMobileMenu()">About</li></a>
+            <div class="border-b-2">
+              <li class="flex justify-between" onclick="toggleCosmetology()"> <a href="./all_courses.html">Courses</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                  
+            </li>
+                 <div id="cosmetologies" class="mt-2 toHide mx-5" >
+                   <a href="./cosmetology_assistant.html"> <h1>Cosmetology Assistant</h1></a>
+                   <a href="./promt_engineering.html"> <h1>Promt Engineering</h1></a>
+                   <a href="./digital_marketing.html"> <h1>Digital Marketing</h1></a>
+                   <a href="./Python.html"> <h1>Python</h1></a>
+                   <a href="./physician_assistant.html"> <h1>Physician Assistant</h1></a>
+                   <a href="./pharmacy_assistant.html"> <h1>Pharmacy Assistant</h1></a>
+                   
+                    <!-- <a href="./courses.html"> <h1>Cosmetology Assistant</h1></a>
+                    <ul class="uls">
+                        <li>Level 1</li>
+                        <li>Level 2</li>
+                    </ul> -->
+                 </div>
+            </div>
+            <a href="./contact.html"><li onclick="toggleMobileMenu()" class="border-b-2">Contact</li></a>
+            <div class='gap-4 font-medium flex items-center'>
+                <a href="./Login.html">
+                <button class='border-2 border-black hover:bg-[#2EB39A] hover:border-[#2EB39A] transition-all hover:text-white shadowOfButton delay-100 duration-100 px-8 py-3 cursor-default rounded-md' >Login</button>
+                </a>
+    
+                 <a href="./Register.html">
+                <button class='border-2 px-8 py-3 bg-[#F04C4B] border-[#F04C4B] shadowOfButton transition-all text-white rounded-md'>Join for free</button> </a>
+        
+                </div> 
+            
+        </ul>
+      </div>
+  
+       <div class='sm:flex hidden  gap-10'>
+       <ul class='flex sm:gap-10 gap-5 mt-5 sm:mt-0 items-center font-medium'>
+        <a href="./index.html"><li class='hover:text-[#F04C4B] navlinks relative' >Home <div class="dot"></div> </li> </a>
+        <a href="./aboutUs.html"><li class='hover:text-[#F04C4B] navlinks relative hover:decoration-clone'>About us<div class="dot"></div> </li></a>
+  
+        
+            <ul class="menu">
+                <li class="menu-item  navlinks relative">
+                    <a href="./all_courses.html"><span class="hover:text-[#F04C4B]">Course</span></a>
+                  <ul class="dropdown ">
+                    <li class="dropdown-item">
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./cosmetology_assistant.html">Cosmetology Assistant</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./promt_engineering.html">Promt Engineering</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./Python.html">Python</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./digital_marketing.html">Digital Marketing</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./physician_assistant.html">Physician Assistant</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./pharmacy_assistant.html">Pharmacy Assistant</a></h1>
+                      <!-- <ul class="uls">
+                        <li class="dropdown-item">Level 1</li>
+                        <li class="dropdown-item">Level 2</li>
+                      </ul> -->
+                    </li>
+                    <!-- <li class="dropdown-item">
+                      <h1 class="text-md font-semibold text-[#F04C4B]">Cosmetology Assistant</h1>
+                      <ul class="uls">
+                        <li class="dropdown-item">Level 1</li>
+                        <li class="dropdown-item">Level 2</li>
+                      </ul>
+                    </li> -->
+                  </ul>
+                </li>
+            </ul>
+            <div class="dot"></div> 
+    </li>      
+    
+  
+        <a href="./contact.html"><li class='hover:text-[#F04C4B] navlinks relative'>Contact<div class="dot"></div></li></a>  
+       </ul>
+          
+  
+           <div class='gap-4 font-medium sm:flex items-center hidden'>
+            
+            <a href="./Login.html">
+            <button class='border-2 border-black hover:bg-[#2EB39A] hover:border-[#2EB39A] transition-all hover:text-white shadowOfButton delay-100 duration-100 px-8 py-3 cursor-default rounded-md' >Login</button>
+        </a>
+  
+             <a href="./Register.html">
+            <button class='border-2 px-8 py-3 bg-[#F04C4B] border-[#F04C4B] shadowOfButton transition-all text-white rounded-md'>Join for free</button> </a>
+    
+            </div> 
+       </div>
+    </nav>
+   </header>
+
+  
+    
+
+  <div class="mx-3 sm:ml-20 sm:mr-40 mb-5" >
+   
+      <h1 class="text-3xl mt-16">Privacy Policy</h1>
+      
+      <p class="mt-5" >SkillTyro Private Limited (hereinafter referred to as "we", "our", "us" and “SkillTyro” and shall include any affiliates) understands the privileged position we are in while providing the services through our website (referred to as “Website”) and are committed to protecting the information and data shared by all of our users (hereinafter referred to as “you”, “yourself” and “User”). In light of the same, we have created this privacy policy (“Privacy Policy”) which is in compliance with the Information Technology Act, 2000 (“IT Act”), Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Information) Rules, 2011 (the "SPI Rules"). The privacy mechanism outlined in this Privacy Policy, as amended from time to time, identifies personally identifiable or personal information that may be collected, how such information is used, and the choices you have regarding our use of this information.</p>
+      <p class="mt-5">Please read this Privacy Policy carefully as by accessing or using the Website, you agree to be bound by the terms described herein and all the terms incorporated by reference. Any information provided to us is subject to this Privacy Policy. If you do not agree to any or all of these terms, do not use the Website. Should you continue to access and use the Website and provide your personal information, such act would constitute your consent to the terms contained herein.</p>
+      <p class="mt-5">This Privacy Policy shall be read in conjunction with the Terms of Use as applicable to the Website.</p>
+
+
+      <h2 class="mt-10 font-semibold text-lg underline">Your Consent</h2>
+      <p class="mt-5">A prerequisite for usage of the Website and the services provided on the Website is the acceptance of this Privacy Policy. This Privacy Policy shall apply to all individuals and entities that use the Website. You grant your consent to be bound by the terms of this Privacy Policy by:</p>
+      <ul class="mt-5">
+        <li>•	Accessing the Website or registering for programs offered on the Website in the manner as provided for in the Terms & Conditions;</li>
+        <li>•	submitting any information to SkillTyro;</li>
+        <li>•	using the features and services offered by SkillTyro on the Website;</li>
+      </ul>
+      <p class="mt-5">If you are registered on the Website, we may need to send routine communications to you, such as administrative messages through email and notifications posted on the Website or through other means available, including text and other forms of messaging. Though we prefer to communicate with the users via email and SMS, as may be deemed necessary, you agree to receive our phone calls or any other mode of communication as may be deemed appropriate.</p>
+      <p class="mt-5">When you register on the Website you also consent to allowing us to periodically send emails, SMS communications, WhatsApp messages or messages through any other means of communication available to SkillTyro based on the details provided by you and the nature of services opted for by you, now or in the future, for relaying information which you may find useful, interesting or in line with your interests. If you do not wish to receive promotional information from us, you can, at any time, choose to opt out of receiving such promotional communications by following the process mentioned in the promotional communication or by contacting us on info@SkillTyro.org.</p>
+      <p class="mt-5">You must ensure to provide us with the correct or up-to-date information at the time of registration on the Website. This will allow us to contact you for further correspondences with respect to the services provided on the Website. We are not responsible for any inaccurate information you provide to us, which may affect your experience when using the Website and the services.</p>
+      <p class="mt-5">If, at any time, you want to access, update, modify or eliminate any information provided by you, you may do so by writing to us on info@SkillTyro.org. You may also withdraw your consent for use of your personal information provided and stop using the services for which consent is required. SkillTyro reserves the right to stop providing any services to which consent has been withdrawn.</p>
+      <p class="mt-5">We may, in future, request other optional information from you in order to customize the Website to deliver personalized service to our users.</p>
+      <p class="mt-5">You may also write to us at info@SkillTyro.org with a request for updating, modifying or deleting any information shared by you.</p>
+    
+      <h2 class="mt-10 font-semibold text-lg underline">Personal Information</h2>
+      <p class="mt-5">While availing our services on the Website you may provide SkillTyro with certain personal information which are required for performance of the services on the Website. The term “personal information” means any information that relates to a natural person, which, either directly or indirectly, in combination with other information available with SkillTyro, is capable of identifying the person concerned and includes amongst other things age, phone number, email id, location etc. Any data that is freely available to the public or made available to SkillTyro through public sources or by way of right to information will not be considered as personal information. We do not knowingly collect personal information from children, and all information upload by a user shall be deemed to be uploaded in compliance of all applicable laws and any children uploading personal information shall be deemed to be doing so with the consent of their parent or guardian.</p>
+      <p class="mt-5">SkillTyro has implemented reasonable security practices and procedures that are commensurate with the information assets being protected and with the nature of our business. While we try our best to provide security that is commensurate with the industry standards, because of the inherent vulnerabilities of the internet, we cannot ensure or warrant complete security of all information that is being transmitted to us by you. However, SkillTyro will take all reasonable measures to ensure that your information is not modified or used for any unauthorized purposes.</p>
+      <p class="mt-5">During the course of use of the Website, provision of services, or registration on the Website the following information may be collected from the Users:</p>
+      <ul class="mt-5">
+        <li>• Name;</li>
+        <li>• Phone Number;</li>
+        <li>• Age;</li>
+        <li>• Email Address;</li>
+        <li>• Mobile Phone Number;</li>
+        <li>• IP Address;</li>
+        <li>•	Details required for provision of services on the Website; and</li>
+        <li>•	Other details as the User may volunteer.</li>
+      </ul>
+      <p class="mt-5">SkillTyro may keep records of telephone calls received and made to their personnel for provision of the services or for making inquiries, orders, or other reasons for the purpose of administration of services.</p>
+      <p class="mt-5">During the use of the Website via the internet, we may automatically receive technical information about your computer/device, including your IP address, your computer operating system, time-zone, browser type and browser plug-in details due to the communication protocol settings on the Internet. When you browse our Website, we may also collect information regarding the pages you viewed, the web addresses from which you arrive or click through to, time spent on certain pages, download errors and page response times. All these information help us analyze user's trends and preferences, and thus assist us in improving our services.</p>
+      <p class="mt-5">SkillTyro may include other optional requests for information from the Users with a view to customize the Website to deliver personalized information to the User and for other purposes as mentioned in this Privacy Policy. Any such additional personal information will also be processed in accordance with this Privacy Policy.</p>
+      <p class="mt-5">SkillTyro shall not be responsible in any manner for the authenticity of the information including the personal information or sensitive personal information supplied by the User to SkillTyro. If a User provides any information that is untrue, inaccurate, not current or incomplete (or becomes untrue, inaccurate, not current or incomplete), or SkillTyro has reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, SkillTyro has the right to suspend or terminate use of features or services on the Website at its sole discretion.</p>
+
+      <h2 class="mt-10 font-semibold text-lg underline">Use of personal information</h2>
+      <p class="mt-5">SkillTyro will collect and retain your personally identifiable information only to the extent that it is necessary to fulfill our services to you and for regulatory purposes. Any personal information submitted by you on the Website or collected by us will be used only for the purposes mentioned below:</p>
+      <ul class="mt-5">
+        <li>•	For registration of the User on the Website</li>
+        <li>•	To carry out our obligations arising from your requests for services on the Website;</li>
+        <li>•	To improve the Website's functionality, and to customize your future experience with us;</li>
+        <li>•	To make sure that our Website’s content is presented in the manner that is most effective for you;</li>
+        <li>•	To deliver personalized information and target advertisements to the user;</li>
+        <li>•	For conducting research on efficient administrative practices on the Website;</li>
+        <li>•	To communicate with you about any changes to our services; </li>
+        <li>•	Non-personally identifiable information, exclusively owned by SkillTyro may be used in an aggregated or non-personally identifiable form for internal research, statistical analysis and business intelligence purposes including those for the purposes of determining the number of visitors, and SkillTyro may sell or otherwise transfer such research, statistical or intelligence data in an aggregated or non-personally identifiable form to third parties and affiliates;</li>
+        <li>•	Ensuring that the provisions of the Terms of Use and Privacy Policy are complied with by all users.</li>
+      </ul>
+
+      <h2 class="mt-10 font-semibold text-lg underline">Disclosure of personal information</h2>
+      <p class="mt-5">SkillTyro in the course of performance of the services may need to disclose/ transfer certain personal information to third parties for the purposes mentioned in this Privacy Policy and the Terms & Conditions. The third parties to whom such information may be disclosed include:</p>
+      <ul class="mt-5 sm:list-outside list-inside list-disc">         
+        <li>	To third party service providers for the purpose of ensuring services are available on the Website.</li>
+        <li>	To our affiliates in India or in other countries who may use and disclose your information for the same purposes as us;</li>
+        <li>	To our employees for the purpose of ensuring provision of services on the Website, subject to the fact that our employees shall be bound by obligations of confidentiality;</li>
+        <li>	To government institutions/ authorities to the extent required:</li>
+        <ul class="list-decimal">
+          <ol>1.	under the laws, rules, and regulations and/ or under orders of any relevant judicial or quasi-judicial authority;</ol>
+          <ol>2.	for the purposes of prevention, investigation and prosecution of cyber incidents;</ol>
+          <ol>3.	for reporting any offenses committed by users;</ol>
+          <ol>4.	to protect and defend the rights or property of SkillTyro;</ol>
+          <ol>5.	to enforce SkillTyro's Terms of Use (to which this Privacy Policy is also a part);</ol>
+          <ol>6.	for verification of any information provided by users; or</ol>
+          <ol>7.	when SkillTyro, in its sole discretion, deems it necessary in order to protect its rights or the rights of others;</ol>
+        </ul>
+        <li class="mt-5">	to third party ad servers, ad agencies, technology vendors such as Facebook, Google etc., and research firms to serve advertisements to the user;</li>
+        <li>	where substantially all our assets are acquired by a third party, such information may be one of the assets that is transferred or acquired by a third party. Under such circumstances, SkillTyro would attempt to ensure that the third party acquiring SkillTyro follows the provisions of this Privacy Policy and process your personal information as set forth in this Privacy Policy</li>
+      </ul>
+      
+      <h2 class="mt-10 font-semibold text-lg underline">How long will personal information be retained</h2>
+      <p class="mt-5">Under normal circumstances the personal information collected by SkillTyro will only be retained for such periods of time as may be required for the provision of the services made available on the Website. We may retain the other information throughout your use of the Website and for a period of 3 years thereafter or such other period as may be prescribed by applicable laws. Confidentiality of such information shall be maintained during the period of retention.</p>
+      <p class="mt-5">SkillTyro may be required to retain data in relation to the Users for records which may be required to be submitted to the appropriate authorities as and when required. SkillTyro shall keep confidential all information retained for such record keeping purposes.</p>
+
+      <h3 class="mt-10 font-semibold text-lg underline">Security Policy</h3>
+      <p class="mt-5">SkillTyro takes careful precaution to protect our Users information from unauthorized access, improper use or disclosure or unauthorized modification. To prevent unauthorized access, we have put in place the latest industry-standard security technology and procedures to safeguard the information we collect online including technical, operational and physical security controls. We store your personally identifiable information on the computer servers placed in a secure environment. Even though we have taken significant steps to protect your information and specifically your personally identifiable information, no company, including the Website can fully eliminate security risks associated with personal information. We further disclaim any responsibility for any intercepted information sent via the internet, and you hereby release us from any and all claims arising out of or related to the use of intercepted information in any unauthorized manner.</p>
+
+      <h3 class="mt-10 underline text-lg font-semibold">Third Party Links</h3>
+      <p class="mt-5">The links to third-party advertisements, third party websites or any third-party electronic communication services (referred to as “Third Party Links”) may be provided on the Website which are operated by third parties and are not controlled by, or affiliated to, or associated with SkillTyro unless expressly specified on the Website. If you access any such Third-Party Links, we request you review such website’s privacy policy. We are not responsible for the policies or practices of Third-Party Links.</p>
+
+      <h3 class="mt-10 underline text-lg font-semibold">Cookies</h3>
+      <p class="mt-5">The Website uses temporary cookies to store certain data (that is not sensitive personal data or information) that is used by Us for maintenance of the Website and its features as well as research and development, and for provision of any services available on the Website. In the course of serving advertisements or optimizing Services, We may allow authorized third parties to place or recognize a unique cookie on the Your browser. We do not store personally identifiable information in the cookies.</p>
+      
+      <h3 class="mt-10 underline text-lg font-semibold">Amendment of Privacy Policy</h3>
+      <p class="mt-5">SkillTyro may update or amend this Privacy Policy at any time, with or without advance notice. In the event there are significant changes in the way SkillTyro treats the User's personal information, SkillTyro will display a notice on the Website.</p>
+      <p class="mt-5">Notwithstanding the above, SkillTyro shall not be required to notify the users of any changes made to the Privacy Policy except sharing a privacy policy once a year with all the amendments for the perusal of the users. Should you have any concern or reject the changes in the Privacy Policy you can refuse to accept the amendments and opt for withdrawing your personal information by writing to the Grievance Officer.</p>
+      
+      <h3 class="mt-10 underline text-lg font-semibold">Grievance Officer</h3>
+      <p class="mt-5">If you have any complaints or grievances or concerns with respect to Website or this Privacy Policy, please inform such matters to the designated Grievance Officer as mentioned below in writing or through electronic mail:</p>
+      <ul>
+        <li>Name: Anshul Pandey</li>
+        <li>Contact Details: info@SkillTyro.org</li>
+        <li>Designation: Manager Legal</li>
+      </ul>
+
+
+
+</div>
+
+
+
+ <!------------------------------------------------------------feedback section ----------------------------------------------------->
+
+<div class='overflow-x-hidden'>
+      
+  <div class='sm:h-[490px] relative mb-0 pb-3 bg-[#fffbf5] bg-no-repeat bg-cover' style="background-image: url(./photos/FeedbackBg.png);">
+      <div class='sm:h-[356px] h-[300px] flex items-center bg-cover'  >
+        <div class='sm:mx-14 mx-2 text-white'>
+            <h2 class='text-3xl font-semibold sm:w-[450px]' style="line-height:44.8px" >At Skilltyro, our passion lies in bridging the gap.</h2>
+            <p class='sm:w-[760px] mt-5' >Founded with a vision to revolutionize learning, we've curated a team of experienced educators and industry experts dedicated to your success. Founded with a vision to revolutionize learning, we've curated a team.</p>
+        </div>
+      </div>
+      <div class='sm:flex  mt-5 mx-3 sm:mx-10' >
+        <div class='flex mb-3 sm:mb-0 border-r-2 pr-5'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-12 h-12">
+  <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+</svg>
+
+            <ul class='flex flex-col justify-between text-white'>
+                <li class='text-xs'>Call us</li>
+                <li class='text-md'>+91 9876-543-210</li>
+            </ul>
+        </div>
+        <div class='flex sm:pl-5 mb-5 sm:mb-0'>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="white" class="w-12 h-12">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+</svg>
+
+
+            <ul class='flex flex-col mt-1 text-white'>
+                <li class='text-xs'>Send email</li>
+                <li class='text-md'>info@skilltyro.com</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class='sm:h-[467px] w-[90vw] sm:w-[457px] mx-4 sm:mx-0  top-3 right-36 sm:absolute feedbackStyle'  style="background:rgba(255, 255, 255, 0.48);">
+        <h1 class='text-xl font-semibold px-7 pt-7 pb-4 mb-4' > Fill the form</h1>
+        <form action="" class='relative' id='feedback'>
+            <input type="text" class='bg-[#EFF2F6] p-3 sm:w-[85%] w-[90%] sm:mx-7 mx-3 mb-3' placeholder='Your Name' />
+            <input type='email' class='bg-[#EFF2F6] p-3 sm:w-[40%] w-[42%] sm:ml-7 ml-3 mr-3 mb-3' placeholder='Email Address' />
+            <input type="number" class='bg-[#EFF2F6] p-3 sm:w-[41%] w-[43%]  sm:mr-7 mr-0 mb-3' name="" id="" placeholder='Phone Number' />
+            <input type="text" class='bg-[#EFF2F6] p-3 sm:w-[85%] w-[90%] sm:mx-7 mx-3 mb-3' placeholder='Education' />
+            <textarea name="" id="" class='bg-[#EFF2F6] p-3 sm:w-[85%] w-[90%] sm:mx-7 mx-3 mb-3 resize-none ' placeholder='Your Message....' cols="30" rows="4"></textarea>
+            <button type="submit" class='bg-[#F04C4B] py-3 px-8 mb-5 sm:mb-0 mx-3 sm:mx-0 shadowOfButton transition-all rounded-md sm:absolute -bottom-12 right-10  text-white'> Submit</button>
+        </form>
+                
+      </div>
+
+    </div>
+ 
+  <!--------------------------------------------------------------------------------------------------------------------------------->
+  
+    
+
+
+
+  
+      <!-- ----------------------------------------------the footer -------------------------------------------------------------------- -->
+      <footer class='bg-[#F04C4B] text-white sm:h-full'>
+        <div class='sm:py-10 py-5 border-b-2 sm:flex justify-between xl:mx-20 mx-3' >
+         <h1 class='text-4xl font-bold w-96 ' style="line-height:58.8px">Unlock Your Potential with Our Upskilling Courses.</h1>
+         <ul class='w-[415px] flex flex-col justify-end'>
+           <li class='flex sm:gap-5 gap-2 mt-5 items-center sm:mt-0'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+              </svg>              
+     1st floor, progressive towers, <br/> Khairatabad, Hyderabad</li>
+     
+           <li class='flex mt-8 sm:gap-5 gap-2 items-center ' >
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+       <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+       <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+     </svg>
+     info@skilltyro.com</li>
+         </ul>
+        </div>
+        
+        <div class='sm:flex-row flex flex-row gap-5 justify-between xl:mx-20 mx-3 sm:my-5' >
+         <ul class='flex flex-col sm:flex-row gap-5 mt-5 sm:mt-0' >
+          <a href="./index.html"><li>Home</li></a>
+           <a href="./aboutUs.html"><li>About us</li></a>
+           <a href="./all_courses.html`"><li>Courses</li></a>
+           <a href="./contact.html"> <li>Contact us</li></a>
+         </ul>
+     
+         <ul class='flex gap-4 flex-col sm:flex-row mt-5 sm:mt-0 justify-center pb-5 sm:pb-0 sm:justify-start '>
+           <a href="./Terms-of-service.html"><li>Terms of Service</li> </a>
+           <a href="./Privacy-policy.html"> <li>Privacy Policy</li> </a>
+           <a href="./student_policy.html"> <li>Student Policy</li> </a>
+           <a href="./refund_policy.html"> <li>Refund Policy</li> </a>
+           <a href="./terms_and_condition.html"> <li>Terms and Conditions</li> </a>
+          </ul>
+        </div>
+        
+        <h2 class='text-center py-5 border-t-2 border-white mx-3 xl:mx-20' >© 2023 All rights reserved</h2>
+    
+    
+    </div>
+    </footer>
+    
+  
+   <script src="script.js"></script>
+   <script>
+      
+    function toggleCosmetology() {
+      var helloElement = document.getElementById('cosmetologies');
+      helloElement.style.display = (helloElement.style.display === 'block' || helloElement.style.display === '') ? 'none' : 'block';
+    }
+  
+  
+    function toggleMobileMenu() {
+      var hiElement = document.getElementById('mobileMenu');
+      hiElement.style.display = (hiElement.style.display === 'block' || hiElement.style.display === '') ? 'none' : 'block';
+    }
+  
+   </script>
+
+</body>
+</html>

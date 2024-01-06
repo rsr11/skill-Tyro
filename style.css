@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #fffbf5;
+}
+
+
+#HeadingOfNewsLetter{
+  font-family: 'Playfair Display', serif;
+}
+
+.feedbackStyle{
+  border-radius: 6px;
+background: #FFF;
+box-shadow: 4px 4px 35.3px 0px rgba(0, 0, 0, 0.13);
+}
+
+.bulbStyle{
+  border-radius: 6px;
+background: #FFFCF0;
+box-shadow: 0px 4px 25.7px 0px rgba(0, 0, 0, 0.14);
+}
+
+.active{
+  color: #F04C4B;
+}
+
+
+.shadowOfButton:hover{  box-shadow: 1px 2px 6px rgb(27, 27, 27);  }
+
+.shadowCard{
+    box-shadow: 1px 2px 6px rgb(27, 27, 27);
+}
+
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    display: none;
+}
+
+.navlinks:hover .dot{
+    display: block;
+}
+
+
+.toShow{
+  display: block;
+}
+
+.toHide{
+    display:none;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .menu-item {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 220px;
+    z-index: 12;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-item:hover .dropdown {
+    display: block;
+  }
+
+  .dropdown-item {
+    padding: 10px;
+    /* border-bottom: 1px solid #ddd; */
+  }
+
+  .uls{
+    list-style: disc;
+    list-style:inside;
+  }
+
+
+  .MobileMenu{
+    width: 100vw;
+    z-index: 18;
+    
+  }
+
+
+
+.activeLevelBtn{
+  color: white;
+  background-color: #F04C4B;
+  border: 0px;
+}
+
+.notActiveLevelBtn{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+
+
+/* SlideShow Style */
+
+/* .activeSlide{
+  background-color: #F04C4B;
+}
+
+.notActiveSlide{
+  background-color: white;
+} */
+
+
+
+
+
+/* the slide show */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.Slidedot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeSlide, .Slidedot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.topToBottom{
+  animation-name: dropDownAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+
+
+
+.dropdown-item h1:hover {
+  background: #F04C4B;
+  color: #FFF;
+}
+
+
+@keyframes dropDownAnimation{
+  from {
+    /* height: 0px; */
+    /* display: none; */
+    /* opacity: .2; */
+  }
+  to{
+    /* height: fit-content; */
+    /* display: block; */
+    /* opacity: 1; */
+  }
+}
+
+
+
+
+/* the crousal css  */
+/* @media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+} */
+
+/* display 3 */
+/* @media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+  
+  .carousel-inner .carousel-item-left.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+transform: translateX(0);
+} */
+
+
+
+/* the chat gpt code */
+#carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust the width as needed */
+  margin: 0 10px;
+}
+
+/* Add your Tailwind CSS classes here */
+.shadowCard {
+  /* Add your shadow styles */
+}
+
+/* Add more styles as needed for other Tailwind CSS classes */
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}

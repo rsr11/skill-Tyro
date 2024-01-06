@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Skill Tyro | Student Pliicy</title>
+</head>
+<body>
+  <header class="sticky top-0 z-50">
+    
+    <nav style="background:linear-gradient(102.33deg, #FFF8EF 2.75%, #FFF5E8 100%) " class='flex justify-between sm:px-14 px-5 py-5'>
+      <a href="./index.html"><img src="photos/SkillTyroLogo.png" class='h-16' alt="" /></a> 
+       
+      <a onclick="toggleMobileMenu()"> <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 sm:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg> </a>
+      <div id="mobileMenu" class="absolute w-[100vw] hidden  top-20 left-0 px-5 pt-5 MobileMenu font-semibold h-[80vh]" style="background:linear-gradient(102.33deg, #FFF8EF 2.75%, #FFF5E8 100%)" >
+        <ul class="flex flex-col gap-5" >
+           <a href="./index.html"><li class="border-b-2" onclick="toggleMobileMenu()" >Home</li></a>
+            <a href="./aboutUs.html"><li class="border-b-2" onclick="toggleMobileMenu()">About</li></a>
+            <div class="border-b-2">
+              <li class="flex justify-between" onclick="toggleCosmetology()"> <a href="./all_courses.html">Courses</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                  
+            </li>
+                 <div id="cosmetologies" class="mt-2 toHide mx-5" >
+                   <a href="./cosmetology_assistant.html"> <h1>Cosmetology Assistant</h1></a>
+                   <a href="./promt_engineering.html"> <h1>Promt Engineering</h1></a>
+                   <a href="./digital_marketing.html"> <h1>Digital Marketing</h1></a>
+                   <a href="./Python.html"> <h1>Python</h1></a>
+                   <a href="./physician_assistant.html"> <h1>Physician Assistant</h1></a>
+                   <a href="./pharmacy_assistant.html"> <h1>Pharmacy Assistant</h1></a>
+                   
+                    <!-- <a href="./courses.html"> <h1>Cosmetology Assistant</h1></a>
+                    <ul class="uls">
+                        <li>Level 1</li>
+                        <li>Level 2</li>
+                    </ul> -->
+                 </div>
+            </div>
+            <a href="./contact.html"><li onclick="toggleMobileMenu()" class="border-b-2">Contact</li></a>
+            <div class='gap-4 font-medium flex items-center'>
+                <a href="./Login.html">
+                <button class='border-2 border-black hover:bg-[#2EB39A] hover:border-[#2EB39A] transition-all hover:text-white shadowOfButton delay-100 duration-100 px-8 py-3 cursor-default rounded-md' >Login</button>
+                </a>
+    
+                 <a href="./Register.html">
+                <button class='border-2 px-8 py-3 bg-[#F04C4B] border-[#F04C4B] shadowOfButton transition-all text-white rounded-md'>Join for free</button> </a>
+        
+                </div> 
+            
+        </ul>
+      </div>
+  
+       <div class='sm:flex hidden  gap-10'>
+       <ul class='flex sm:gap-10 gap-5 mt-5 sm:mt-0 items-center font-medium'>
+        <a href="./index.html"><li class='hover:text-[#F04C4B] navlinks relative' >Home <div class="dot"></div> </li> </a>
+        <a href="./aboutUs.html"><li class='hover:text-[#F04C4B] navlinks relative hover:decoration-clone'>About us<div class="dot"></div> </li></a>
+  
+        
+            <ul class="menu">
+                <li class="menu-item  navlinks relative">
+                    <a href="./all_courses.html"><span class="hover:text-[#F04C4B]">Course</span></a>
+                  <ul class="dropdown ">
+                    <li class="dropdown-item">
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./cosmetology_assistant.html">Cosmetology Assistant</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./promt_engineering.html">Promt Engineering</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./Python.html">Python</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./digital_marketing.html">Digital Marketing</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./physician_assistant.html">Physician Assistant</a></h1>
+                      <h1 class="text-md font-semibold text-[#F04C4B]"><a href="./pharmacy_assistant.html">Pharmacy Assistant</a></h1>
+                      <!-- <ul class="uls">
+                        <li class="dropdown-item">Level 1</li>
+                        <li class="dropdown-item">Level 2</li>
+                      </ul> -->
+                    </li>
+                    <!-- <li class="dropdown-item">
+                      <h1 class="text-md font-semibold text-[#F04C4B]">Cosmetology Assistant</h1>
+                      <ul class="uls">
+                        <li class="dropdown-item">Level 1</li>
+                        <li class="dropdown-item">Level 2</li>
+                      </ul>
+                    </li> -->
+                  </ul>
+                </li>
+            </ul>
+            <div class="dot"></div> 
+    </li>      
+    
+  
+        <a href="./contact.html"><li class='hover:text-[#F04C4B] navlinks relative'>Contact<div class="dot"></div></li></a>  
+       </ul>
+          
+  
+           <div class='gap-4 font-medium sm:flex items-center hidden'>
+            
+            <a href="./Login.html">
+            <button class='border-2 border-black hover:bg-[#2EB39A] hover:border-[#2EB39A] transition-all hover:text-white shadowOfButton delay-100 duration-100 px-8 py-3 cursor-default rounded-md' >Login</button>
+        </a>
+  
+             <a href="./Register.html">
+            <button class='border-2 px-8 py-3 bg-[#F04C4B] border-[#F04C4B] shadowOfButton transition-all text-white rounded-md'>Join for free</button> </a>
+    
+            </div> 
+       </div>
+    </nav>
+   </header>
+       
+       <div class="mx-3 sm:ml-20 sm:mr-40 mb-5">
+        
+           <h1 class="text-3xl mt-16">Student Policy</h1>
+     
+           <h2 class="mt-10 font-semibold text-lg underline">Model Code of Conduct</h2>
+           <p class="mt-5">All students must follow the rules and regulations as framed by the Institute/ NSDC, from time to time.</p>
+           <ul class="mt-5">
+               <li>•	Every student admitted to the SkillTyro Institute is expected to maintain discipline and a peaceful environment on the campus.</li>
+               <li>•	Students must be regular and punctual at lectures, demonstrations, seminars, and other academic exercises. They are required to attend both technical and ELPSL classes.</li>
+               <li>•	In case of non-attendance of classes, an application must be presented to the Facilitator and the Facilitator in Charge for leave of absence giving the reasons for approval at the discretion of the Institute.</li>
+               <li>•	Students are expected to keep their Identity Card with them and show as and when required by any employee of the Institute.</li>
+               <li>•	Students are expected to wear uniforms along with lab coats at all times within the SkillTyro Institute premises/ during internship/ hospital visits etc.</li>
+               <li>•	Students are required to appear for all exams held by the Institute.</li>
+               <li>•	Students shall participate compulsorily in the allied academic activities carried out by the Institute.</li>
+               <li>•	The fee should be deposited within the prescribed time and any delay will lead to the imposition of a fine.</li>
+               <li>•	Students are expected to behave decently with the Teaching and Non-teaching Staff of the Institute.</li>
+               <li>•	Students are forbidden to use any kind of social media service for any non-academic purposes on the campus premises.</li>
+               <li>•	Adoption of unfair means in the examination shall constitute a gross viliation of the code of conduct. This will be punished as deemed appropriate considering the exact nature of the offense. This punishment can extend to the level of rustication of the student.</li>
+               <li>•	Students shall not deface, destroy, disfigure, damage, misuse, or cause any loss in any manner to or regarding public, private & SkillTyro Institute properties.</li>
+               <li>•	Participation in agitation and pliitical activities is an illegal act and is strictly prohibited.</li>
+               <li>•	Possessing or using any explosives and weapons is not allowed on the campus. Any case of criminal activity or viliation of law and order in the SkillTyro Institute campus will be reported to the pliice.</li>
+               <li>•	The SkillTyro Institute facilities/amenities such as Lab articles, classrooms, etc. Any misuse or wilful damage caused to the facilities/amenities constitutes an act of indiscipline, and the student/students responsible will have to pay the cost of damages caused by them.</li>
+               <li>•	Ragging/Eve Teasing in any form is illegal and punishable in the strictest form. Any person caught indulging in ragging/eve-teasing shall be liable to imprisonment and/or fine as stipulated in the rulings of the Supreme Court of India. All such cases will be reported to the pliice and the strictest legal action will be pursued.</li>
+               <li>•	The students can contact the FIC to lodge a formal complaint if he/she faces any such issue. If his/her issue is not satisfactorily reslived, he/she should go to the Center Ceo or can contact the Corporate office directly via myCareer, call or mail.</li>
+               <li>•	Smoking, chewing tobacco, consumption of liquor, narcotics, or any other prohibited substances in the SkillTyro Institute premises is strictly prohibited. Any such offense will be reported to the pliice is liable for severe punishment.</li>
+               <li>•	In case of a dispute on any matter, the decision of the management of the SkillTyro Institute would be final and binding upon all the students.</li>
+               <li>•	SkillTyro Institute reserves the right to rusticate, withhlid the results, and deny certification(s) to the students who fail to observe the Institute’s Model Code of Conduct.</li>
+           </ul>
+           
+           <h2 class="font-semibold text-lg mt-10 underline">Fee Payment Policy</h2>
+           <ul class="mt-5">
+               <li>•	All fees, including registration fee, tuition fee, exam fee, late fee, uniform or lab coat charges, etc. are strictly non-refundable.</li>
+               <li>•	The fee is due by the 10th of the applicable month. Failing this will would attract a fine as per the rules of the Institute.</li>
+               <li>•	If the fee for the student is not paid he/she will not be allowed to sit for any examinations.</li>
+               <li>•	The student has to obtain a No Objection Certificate/No Due Certificate from the Institute before appearing for any examination, Internship, or Placement.</li>
+               <li>•	If a student ends up not being able to give an exam because of non-payment of fee, or any other outcome like failing, etc., the attempt WILL be counted. The student may also have to repeat the classes again and may have to pay additional fees for additional months.</li>
+               <li>•	A late fee charge of Rs. 50/- per day will be levied on anyone who has not paid by the 10th of the applicable month. Hence, if the fee is paid on the 11th of the month, the total late fee will be Rs.50. Similarly, on 12th, it would be (50 X 2) = Rs. 100, and, on 13th, it would be (50 X 3) = Rs. 150 and so on, till all pending fee is paid in full.</li>
+               <li>•	After 15 days of delay, the SkillTyro Institute reserves the right to rusticate a student from the respective program.</li>
+               <li>•	Any payment received from any student will first be adjusted towards any fines levied on the student and only the balance will be adjusted towards the fee. If the student has not paid enough to cover the entire fee amount (including late fee and fines) after deduction of fines, then the fee shall be considered to remain outstanding.</li>
+               <li>•	Communication regarding fees and fee schedules will be done directly with the student and parents by issuing them a letter once at the time of joining the program.</li>
+               <li>•	Regular SMS’s will be sent to students and their parents as reminders.</li>
+               <li>•	Regular SMS’s will be sent to students and their parents regarding any fines including late fees.</li>
+               <li>•	SkillTyro Institute reserves the right to rusticate, withhlid the results, and deny certification(s) to the students who fail to pay the fee, including a fine if any.</li>
+           </ul>
+
+           <h3 class="underline font-semibold text-lg mt-10">Admission Policy</h3>
+           <p class="mt-5">All students must provide all admission documents immediately after registration.</p>
+           <ul class="mt-5">
+            <li>1.	Properly filled out Admission form with Signature</li>
+            <li>2.	4 Passport-sized photographs</li>
+            <li>3.	Attested copies of all previous education records, transcripts & certificates</li>
+            <li>4.	Student’s and Guardian’s Aadhaar Card</li>
+            <li>5.	Guardian’s PAN card</li>
+            <li>6.	Address Proof (Ration card/ Aadhaar Card/ Electricity Bill/ Driving license/ Voter ID)</li>
+            <li>7.	Income Proof (BPL card/ Income certificate of parents/ 3 months’ Salary Slips/ copy of income attested by gazetted officer/ 6 months bank statement)</li>
+            <li>8.	Bank Account details of student and parent (6 months bank statement)</li>
+            <li>9.	An undertaking signed by the students and their parent</li>
+            <li>10.	A fitness certificate from a practicing General Practitioner</li>
+            <li>11.	Caste Category Certificate</li>
+           </ul>
+
+           <h2 class="underline mt-10 font-semibold text-lg">Mentoring Policy</h2>
+           <ul class="mt-5">
+            <li>1.	All students have a dedicated mentor from within the faculty at SkillTyro. Each student is expected to meet their mentor at least once a month. It is the student’s responsibility to meet the mentor once a month. If a student does not meet his/ her mentor, appropriate disciplinary action may be initiated against him/ her.</li>
+            <li>2.	Faculty who serve as mentors have a good understanding of the career paths that are available to the students. It is important the students use this opportunity to get a better understanding of how their education will help them achieve their life dream. Your mentors can help you understand if the chosen program of study is the right one for your career, get a better understanding of your syllabus, understand all programs, and also discuss career options after finishing the programs, etc.</li>
+            <li>3.	Students are encouraged to take advantage of their interactions with their mentors to guide their career & life plans better.</li>
+            <li>4.	Students can bring up any issue they face with their mentors. This includes but is not limited to issues with the administration, issues with the facilitator, etc. After each mentoring session, the student is expected to fill a ‘Mentee form’.</li>
+           </ul>
+
+           <h2 class="underline mt-10 font-semibold text-lg">Examination Policy</h2>
+           <ul class="mt-5">
+            <li>•	All students will have summative and formative assessments which are mandatory. Students will need to answer a “Revision Test” every week. The marks of this “Revision Test” will be counted in the final marks.</li>
+            <li>•	The marks of all the exams will be counted in the final marks. The syllabus for these exams will be the curriculum covered until that exam.</li>
+            <li>•	Students must have a minimum of 80% attendance. This is mandatory for all students. If any student has less than 80% attendance, he/she will not be allowed to sit for the Majors. Students' attendance will also be counted in the final marks.</li>
+            <li>•	Students must clear all their dues (tuition fee, late fees if applicable, and all other fees) in order to get the No Objection Certificate and give their Majors. This is mandatory for all students. If any student does not clear his/her dues, he/she will not be allowed to sit for the exams.</li>
+            <li>•	60% of marks are mandatory for passing all programs. Students will be given a grade as per their performance on the examination.</li>
+            <li>•	Further, any student caught cheating in any examination shall be marked as FAILED in that examination. The student will also have to face a disciplinary committee and face consequences as deemed fit by the disciplinary committee. These include but are not limited to rustication, repetition of the entire program, with additional full fees as applicable, etc.</li>
+            <li>•	Assessments will be based on written tests, assignments, presentations, viva-voce, and projects, etc. The student does not have any right to challenge the results of an examination. SkillTyro Institute reserves the right to withhold the results and deny certification(s) to the students who fail to meet a minimum of 80% attendance criteria and/or do not clear all their dues and/or do not participate/score in revision tests or other events and assessments.</li>
+            <li>•	If the student fails in both attempts - the student will be terminated and marked dropout.</li>
+            <li>•	If the student doesn’t clear both checks by 2nd attempt i.e. by the 2nd attempt has not cleared dues or doesn’t have the minimum attendance - the student will be terminated and marked dropout.</li>
+            <li>•	If the student is unable to clear the check for any attempt or is absent after clearing the checks, it will still count as an attempt.</li>
+           </ul>
+
+           <h2 class="mt-10 underline font-semibold text-lg">Attendance and Leave Policy</h2>
+           <ul class="mt-5">
+            <li>•	Classes are conducted daily (except on holidays, as decided by the Institute). Students are expected to attend all classes as per their schedule. 80% attendance is mandatory for all students. If a student’s attendance is less than 80%, he/she will not be allowed to give any examination. This will mean a delay in his/her internship and certification. Also, if 80% of the number of classes is not a whole number, the required number of classes will be rounded up to the next highest integer value. For example, if the total working days were 44, then 80% of 44 classes is 35.2 classes - which means that the student is required to attend a minimum of 36 classes.</li>
+            <li>•	Further, all students are to reach their class on time. If a class starts at 9:00 AM, students may be denied entry after 9:05 AM i.e. the student will be marked absent for that day.</li>
+            <li>•	If a student wants a leave on a working day, he/she can apply for the same by submitting a written application to the facilitator.</li>
+            <li>•	This has to be done at least 1 day in advance. The student should attach all documents supporting his/her leave application such as medical certificates, wedding cards, etc. Leave will be granted at the discretion of the facilitator.</li>
+            <li>•	In case of any emergency due to which the student failed to submit his/her leave application in advance, it is mandatory to submit the leave application on the next day.</li>
+            <li>•	Hence, the student may be:</li>
+            <ol>
+              <li>1.	Present (when attending the class)</li>
+              <li>2.	Absent with leave granted by the facilitator</li>
+              <li>3.	Absent without leave granted by the facilitator</li>
+            </ol>
+            <li>•	If a student is absent without leave granted by the facilitator for 3 consecutive days or more than 5% of the total working days, disciplinary action will be initiated against him/her. This involves sending official communication to the parents of the student, formal submission of reason statements, an apology by the student and parents as applicable, and can eventually result in rustication of the student.</li>
+            <li>•	SkillTyro Institute reserves the right to rusticate, withhold the results, and deny certification(s) to the students who fail to comply with the Attendance policy.</li>
+           </ul>
+           <p class="mt-5">Jurisdiction - Admissions in HSS/Q0301 Medical Laboratory Technician, HSS/Q0701 X-Ray Technician, HSS/Q2302 Emergency Medical Technician (EMT) -Advanced, HSS/Q2601 Operation Theater Technician programs shall be subject to the outcome of WP (C) 6141 of 2021 by the Honorable High Court of Delhi.</p>
+
+           <h3 class="mt-10 underline text-lg font-semibold">Internship Policy</h3>
+           <p class="mt-5">Students may be sent by the SkillTyro Institute for an Internship to one of the industry partners. This internship will be allotted as per the preference of the industry partner. This means that the internship can be at a place that is far from the student’s area of residence. This can also mean that the student has to work during the night shift. The student will have no right in rejecting either the Industry Partner, location or shift, and will have to go for the Internship assigned by the Institute. Failure to comply can have serious consequences of the level of rustication. The Institute will not entertain any negotiations regarding the change of assigned Internship. During the Internship, students are expected to maintain the highest level of discipline & show the utmost level of respect to the industry partner.</p>
+           <p class="mt-5">Certain students will not be allowed to go on Internship, such as:</p>
+           <ol class="mt-5">
+            <li>1.	If they have failed any of their exams.</li>
+            <li>2.	If they have any outstanding dues payable to SkillTyro Institute in form of fees/fines/security deposits/charges etc.</li>
+            <li>3.	If they have failed to receive the “No Dues” certificate from the Institute.</li>
+            <li>4.	If they have not met their mentor as per schedule.</li>
+            <li>5.	If they have failed to demonstrate the discipline expected of each SkillTyro student.</li>
+            <li>6.	If they are considered psychologically or technically unfit for training.</li>
+            <li>7.	If they have not completed the ‘Internship Preparation Training’ provided by the Placement Cell.</li>
+            <li>8.	If they have not passed the ‘Internship Preparation Training’ provided by the Placement Cell.</li>
+            <li>9.	If they fail to be present for the Internship interview on the assigned date with the Industry Partner</li>
+           </ol>
+           <p class="mt-5">Further, a student may even be rusticated from SkillTyro Institute if, during the Internship:</p>
+           <ol class="mt-5">
+            <li>1.	He/she misbehaves with any employee/ customer of the Industry Partner.</li>
+            <li>2.	He/she has an unauthorized leave of absence from the Internship.</li>
+            <li>3.	He/she fails to perform his/ her duties as per the expectations of the Industry Partner.</li>
+            <li>4.	He/she violates any policies of the Industry Partner.</li>
+            <li>5.	He/she causes harm to the property/reputation etc. of the Industry Partner.</li>
+            <li>6.	He/she causes harm to the reputation of the Institute.</li>
+            <li>7.	He/she refuses to attend and drops out of the assigned Internship.</li>
+           </ol>
+           <p class="mt-5">If a student faces any issues during the Internship, he/she is expected to report them to the Placement Cell at SkillTyro Institute. Once the student has informed of an issue, he/she must wait for further instructions from SkillTyro Institute and must continue to attend work as per assignment, unless doing so is illegal or unfeasible for any reason.</p>
+           <p class="mt-5">The student can also reach out to his/her mentor as SkillTyro Institute is fully committed to providing all possible support to all students.</p>
+           <p class="mt-5">At the end of the Internship, all students will have to submit the following:</p>
+           <ol class="mt-5">
+            <li>1.	A logbook and an Internship Report on what they did & learned during their Internship.</li>
+            <li>2.	The logbook must be signed by the direct supervisor at the Industry Partner.</li>
+            <li>3.	Internship Certificate from the employer with employer sign and stamp.</li>
+            <li>4.	Filled Employer Feedback Form with employer sign and stamp.</li>
+            <li>5.	Filled Student Feedback Form.</li>
+            <li>6.	Filled Internship Daily Attendance Form with employer sign and stamp.</li>
+           </ol>
+           <p class="mt-5">If either of the above is missing, the student will be considered to have failed the Internship and will not be awarded a Certificate/Diploma/Advanced Diploma, etc. No second chance will be given to a student to make up for a failed Internship. Such students will be considered to have failed their Program.</p>
+           <p class="mt-5">SkillTyro Institute reserves the right to rusticate, withhold the results, and deny certification(s) to the students who fail to meet any of the Internship requirements.</p>
+
+           <h2 class="mt-10 underline text-lg font-semibold">Placement Policy</h2>
+           <p class="mt-5">Placement Cell will actively support and coordinate with the Academic Department in providing guidance and support to the students for their self-grooming and to bring the best possible opportunities for Campus Placements for the students.</p>
+           <p class="mt-5">Placement Cell will be a composite department, consisting of the Institute’s staff and students, formed under the recommendation of the Institute’s Management.</p>
+           <p class="mt-5">The Placement events/Interview calls will be notified to the students through posts on WhatsApp groups, or other social media, SMS’s, myCareer notifications, or personal mails. These notices will also be posted on the Institute’s notice board. The Placement Cell may also employ additional parallel systems like phone calls or class announcements, which will only be a supplementary system and not necessarily an assured mode of communication.</p>
+           <p class="mt-5">To augment the placement activities, a team of students will be formed giving adequate representation to all Programs. The selection of this team will be done as per the suggestions given by the FIC.</p>
+           <p class="mt-5">The contentious issues, problems, grievances, or matters involving policy changes will be referred to the Institute’s Management through the Placement Cell.</p>
+           <p class="mt-5">Certain students may be debarred from the SkillTyro Institute Placement pool and SkillTyro Institute reserves the right to withhold the results and deny certification(s) to the students who fail to meet any of the Placement requirements: </p>
+           <ol class="mt-5">
+            <li>1.	Once the candidates are shortlisted as per the criteria received from the recruiting organization, they will have to attend the next round, whether PI, GD or any other. Absent students will be debarred from further placement support. The student may be allowed to withdraw from the selection process of a particular organization only if a valid reason is furnished by the student through a written application submitted to the Placement Cell before receiving an offer of employment. The student may then be allowed to attend the forthcoming Placement process. However, the student will have to furnish a written undertaking that he withdrew from the placement process & any waiver will be at the discretion of the Institute.</li>
+            <li>2.	If the offer from the recruiter is received, and the student refuses to join the company, he/she will be removed from the placement list and will not be given another opportunity for placement. This provision is in the interest of all students to avoid wasting available vacancies and maintain a good relationship with the recruiters.</li>
+            <li>3.	Students must adhere to the norms of discipline and personal conduct during their interactions with recruiters. Any misconduct will attract disciplinary action which may result in students being permanently debarred from the placement process.</li>
+            <li>4.	The Institute’s Placement Cell will strive to provide further support to its alumni to enhance their careers by suggesting job opportunities to them. However, for this, it is mandatory for the student to work for at least 6 months with the company that they are currently working with. They must also maintain good relations with their previous employer and quit the job only as per employer policies. If any of these conditions are not met, continued support shall not be provided by the Institute.</li>
+           </ol>
+           <p class="mt-5">The student must provide the below placement proofs to the SkillTyro Institute to get their certification:</p>
+           <ol class="mt-5">
+            <li>1.	Offer Letter from employer with employer sign and stamp</li>
+            <li>2.	Salary Slips - a minimum of 3 months</li>
+            <li>3.	Bank Statements - a minimum of 3 months</li>
+            <li>4.	Filled Employer Feedback Form with employer sign and stamp</li>
+            <li>5.	Filled Student Feedback Form</li>
+           </ol>
+     
+     
+       </div>
+
+<!------------------------------------------------------------feedback section ----------------------------------------------------->
+
+<div class='overflow-x-hidden'>
+      
+  <div class='sm:h-[490px] relative mb-0 pb-3 bg-[#fffbf5] bg-no-repeat bg-cover' style="background-image: url(./photos/FeedbackBg.png);">
+      <div class='sm:h-[356px] h-[300px] flex items-center bg-cover'  >
+        <div class='sm:mx-14 mx-2 text-white'>
+            <h2 class='text-3xl font-semibold sm:w-[450px]' style="line-height:44.8px" >At Skilltyro, our passion lies in bridging the gap.</h2>
+            <p class='sm:w-[760px] mt-5' >Founded with a vision to revolutionize learning, we've curated a team of experienced educators and industry experts dedicated to your success. Founded with a vision to revolutionize learning, we've curated a team.</p>
+        </div>
+      </div>
+      <div class='sm:flex  mt-5 mx-3 sm:mx-10' >
+        <div class='flex mb-3 sm:mb-0 border-r-2 pr-5'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-12 h-12">
+  <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+</svg>
+
+            <ul class='flex flex-col justify-between text-white'>
+                <li class='text-xs'>Call us</li>
+                <li class='text-md'>+91 9876-543-210</li>
+            </ul>
+        </div>
+        <div class='flex sm:pl-5 mb-5 sm:mb-0'>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="white" class="w-12 h-12">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+</svg>
+
+
+            <ul class='flex flex-col mt-1 text-white'>
+                <li class='text-xs'>Send email</li>
+                <li class='text-md'>info@skilltyro.com</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class='sm:h-[467px] w-[90vw] sm:w-[457px] mx-4 sm:mx-0  top-3 right-36 sm:absolute feedbackStyle'  style="background:rgba(255, 255, 255, 0.48);">
+        <h1 class='text-xl font-semibold px-7 pt-7 pb-4 mb-4' > Fill the form</h1>
+        <form action="" class='relative' id='feedback'>
+            <input type="text" class='bg-[#EFF2F6] p-3 sm:w-[85%] w-[90%] sm:mx-7 mx-3 mb-3' placeholder='Your Name' />
+            <input type='email' class='bg-[#EFF2F6] p-3 sm:w-[40%] w-[42%] sm:ml-7 ml-3 mr-3 mb-3' placeholder='Email Address' />
+            <input type="number" class='bg-[#EFF2F6] p-3 sm:w-[41%] w-[43%]  sm:mr-7 mr-0 mb-3' name="" id="" placeholder='Phone Number' />
+            <input type="text" class='bg-[#EFF2F6] p-3 sm:w-[85%] w-[90%] sm:mx-7 mx-3 mb-3' placeholder='Education' />
+            <textarea name="" id="" class='bg-[#EFF2F6] p-3 sm:w-[85%] w-[90%] sm:mx-7 mx-3 mb-3 resize-none ' placeholder='Your Message....' cols="30" rows="4"></textarea>
+            <button type="submit" class='bg-[#F04C4B] py-3 px-8 mb-5 sm:mb-0 mx-3 sm:mx-0 shadowOfButton transition-all rounded-md sm:absolute -bottom-12 right-10  text-white'> Submit</button>
+        </form>
+                
+      </div>
+
+    </div>   
+    <!--------------------------------------------------------------------------------------------------------------------------------->
+
+      
+
+
+
+
+
+
+
+     <!-- ----------------------------------------------the footer -------------------------------------------------------------------- -->
+
+   <!-- ----------------------------------------------the footer -------------------------------------------------------------------- -->
+
+   <footer class='bg-[#F04C4B] text-white sm:h-full'>
+    <div class='sm:py-10 py-5 border-b-2 sm:flex justify-between xl:mx-20 mx-3' >
+     <h1 class='text-4xl font-bold w-96 ' style="line-height:58.8px">Unlock Your Potential with Our Upskilling Courses.</h1>
+     <ul class='w-[415px] flex flex-col justify-end'>
+       <li class='flex sm:gap-5 gap-2 mt-5 items-center sm:mt-0'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+          </svg>              
+ 1st floor, progressive towers, <br/> Khairatabad, Hyderabad</li>
+ 
+       <li class='flex mt-8 sm:gap-5 gap-2 items-center ' >
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+   <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+   <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+ </svg>
+ info@skilltyro.com</li>
+     </ul>
+    </div>
+    
+    <div class='sm:flex-row flex flex-row gap-5 justify-between xl:mx-20 mx-3 sm:my-5' >
+     <ul class='flex flex-col sm:flex-row gap-5 mt-5 sm:mt-0' >
+      <a href="./index.html"><li>Home</li></a>
+       <a href="./aboutUs.html"><li>About us</li></a>
+       <a href="./all_courses.html`"><li>Courses</li></a>
+       <a href="./contact.html"> <li>Contact us</li></a>
+     </ul>
+ 
+     <ul class='flex gap-4 flex-col sm:flex-row mt-5 sm:mt-0 justify-center pb-5 sm:pb-0 sm:justify-start '>
+       <a href="./Terms-of-service.html"><li>Terms of Service</li> </a>
+       <a href="./Privacy-policy.html"> <li>Privacy Policy</li> </a>
+       <a href="./student_policy.html"> <li>Student Policy</li> </a>
+       <a href="./refund_policy.html"> <li>Refund Policy</li> </a>
+       <a href="./terms_and_condition.html"> <li>Terms and Conditions</li> </a>
+      </ul>
+    </div>
+    
+    <h2 class='text-center py-5 border-t-2 border-white mx-3 xl:mx-20' >© 2023 All rights reserved</h2>
+
+
+</div>
+</footer>
+
+
+
+
+
+
+ <!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+ <script src="script.js"></script>
+ <script>
+    
+  function toggleCosmetology() {
+    var helloElement = document.getElementById('cosmetologies');
+    helloElement.style.display = (helloElement.style.display === 'block' || helloElement.style.display === '') ? 'none' : 'block';
+  }
+
+
+  function toggleMobileMenu() {
+    var hiElement = document.getElementById('mobileMenu');
+    hiElement.style.display = (hiElement.style.display === 'block' || hiElement.style.display === '') ? 'none' : 'block';
+  }
+
+
+
+ </script>
+</body>
+</html>
